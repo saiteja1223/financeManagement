@@ -29,7 +29,7 @@ function Dashbord() {
   return (
     <div>
     <div>
-         <button onClick={()=>navigate("/addEntry")}>Add Entries</button>
+         <button onClick={()=>navigate("/addEntry")} className='addButton'>Add Entries</button>
        
     </div>
     <div className='EntriesList'>

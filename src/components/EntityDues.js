@@ -41,7 +41,7 @@ function EntityDues({ users, handleUserPaidStatus }) {
                     </thead>
                     <tbody>
                         {users?.map(user => (
-                            <tr key={user.$id} className={user.bill ? 'success' : 'pending'}>
+                            <tr key={user.$id} className={user.status ? 'success' : 'pending'}>
                                 <td>{user.name}</td>
                                 <td>{(user.amount * user.interest) / 100}</td>
                                 <td>{formatDate(user.date)}</td>

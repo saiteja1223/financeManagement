@@ -49,13 +49,14 @@
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .entriesMain {
         padding: 10px; /* Reduce padding on smaller screens */
+        width:100%
     }
 
     .entitySub {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: row; /* Stack items vertically */
     }
 
     .entityRight {

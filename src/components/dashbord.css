@@ -3,3 +3,18 @@
     flex-direction: column;
     gap:2rem;
 }
+
+.addButton {
+    background-color: green;
+    width: 10rem;
+    margin: 0; /* Remove fixed left margin */
+    /* Adding some margin to help space out elements */
+    margin-top: 1rem;
+}   
+@media (max-width: 480px) {
+    .addButton{
+        width: 8rem;
+
+    }
+    
+}
