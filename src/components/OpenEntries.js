@@ -126,7 +126,7 @@ async function handeleDelete(){
     id
 
   )
-  navigate('/dashbord')
+  navigate('/')
 }
   catch(e){
     console.log(e);
