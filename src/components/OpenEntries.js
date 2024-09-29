@@ -134,7 +134,7 @@ async function handeleDelete(){
 }
   useEffect(() => {
    getdata();
-}, [getdata]);
+}, []);
 
 
   return (
