@@ -24,7 +24,7 @@ function EntityDues({ users, handleUserPaidStatus }) {
     useEffect(() => {
         getTotalAmount();
         console.log('useEffect called in EntityDues');
-    }, [users]); // Recalculate total sum whenever the `users` prop changes
+    }, [users,getTotalAmount]); // Recalculate total sum whenever the `users` prop changes
 
     return (
         <div className="container"> {/* Add a class for better styling */}

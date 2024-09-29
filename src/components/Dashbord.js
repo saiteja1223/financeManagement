@@ -1,6 +1,6 @@
 import React, {  useEffect, useState } from 'react'
 import Entries from './Entries'
-import data1 from '../utils/data.json'
+
 import { databases } from '../AppWriteConfig/config'
 import './dashbord.css'
 import { useNavigate } from 'react-router-dom'
