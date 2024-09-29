@@ -1,0 +1,91 @@
+/* entityDues.css */
+
+/* Basic styling for the main container */
+.container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the title */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Styling for the checkbox */
+input[type="checkbox"] {
+    transform: scale(1.5); /* Make the checkbox bigger */
+}
+
+/* Total amount section */
+.total-amount {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: right;
+}
+.success{
+   color: green;
+}
+.pending{
+   color:red;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em; /* Adjust font size for mobile */
+    }
+
+    table {
+        display: block; /* Make table scrollable */
+        overflow-x: auto; /* Enable horizontal scroll */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+    th, td {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    th {
+        font-size: 0.9em; /* Smaller font for headers on mobile */
+    }
+
+    .total-amount {
+        font-size: 1em; /* Smaller font size for total amount on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2em; /* Further adjust font size for very small screens */
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.2); /* Smaller checkbox on very small screens */
+    }
+
+    td {
+        font-size: 0.8em; /* Smaller font size for table data on very small screens */
+    }
+}

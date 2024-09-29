@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Dashbord from './components/Dashbord';
+import OpenEntries from './components/OpenEntries';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Dues from './components/Dues';
+import { EntityProvider } from './context/EntityContext';
 function App() {
   return (
+    <EntityProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+     <Navbar></Navbar>
+      <Routes>
+        <Route path='/' Component={Dashbord}></Route>
+        <Route path='/addEntry' Component={OpenEntries}></Route>
+        <Route path='/addEntry/:id' Component={OpenEntries}></Route>
+        <Route path='/dues' Component={Dues}></Route>
+      </Routes>
+      </BrowserRouter>
+      
     </div>
+    </EntityProvider>
   );
 }
 

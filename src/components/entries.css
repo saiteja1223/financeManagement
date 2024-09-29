@@ -1,0 +1,65 @@
+/* entries.css */
+
+/* Main container for the entries */
+.entriesMain {
+    margin: 15px 0; /* Space between entries */
+    padding: 15px; /* Inner padding for the entry */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    width: 50%;
+}
+
+/* Hover effect */
+.entriesMain:hover {
+    background-color: #e9ecef; /* Slightly darker on hover */
+}
+
+/* Sub-container for layout */
+.entitySub {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space between left and right */
+    align-items: center; /* Center items vertically */
+}
+
+/* Left section styles */
+.entityLeft {
+    flex: 1; /* Takes remaining space */
+}
+
+/* Individual entry details */
+.entityName, .entityInterest, .entityDate {
+    display: block; /* Each detail on a new line */
+    color: #333; /* Dark text for readability */
+    margin-bottom: 5px; /* Space between details */
+}
+
+/* Right section styles */
+.entityRight {
+    text-align: right; /* Align amount to the right */
+    min-width: 100px; /* Minimum width for consistency */
+}
+
+/* Amount styling */
+.entityAmount {
+    font-weight: bold; /* Bold amount for emphasis */
+    font-size: 1.2em; /* Larger font size */
+    color: #28a745; /* Green color for positive amounts */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .entriesMain {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .entitySub {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .entityRight {
+        text-align: left; /* Align left on small screens */
+        margin-top: 10px; /* Space above right section */
+    }
+}
