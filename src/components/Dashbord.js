@@ -43,6 +43,8 @@ function Dashbord() {
       }
     </div>
 
+    <button onClick={()=>navigate('/slide1')}>powerpoint</button>
+
     </div>
   )
 }
