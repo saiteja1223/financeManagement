@@ -17,17 +17,21 @@ import Slide8SectorImpact from './powerpoint/Slide8SectorImpact';
 import Slide9Preparation from './powerpoint/Slide9Preparation';
 import Slide10Conclusion from './powerpoint/Slide10Conclusion';
 import Slide11ThankYou from './powerpoint/Slide11ThankYou';
+import VoiceNavigator from './powerpoint/VoiceNavigator';
+import Introduction from './powerpoint/Introduction';
 function App() {
   return (
     <EntityProvider>
     <div className="App">
       <BrowserRouter>
      {/* <Navbar></Navbar> */}
+     <VoiceNavigator/>
       <Routes>
         <Route path='/' Component={Dashbord}></Route>
         <Route path='/addEntry' Component={OpenEntries}></Route>
         <Route path='/addEntry/:id' Component={OpenEntries}></Route>
         <Route path='/dues' Component={Dues}></Route>
+        <Route path='/slide0' Component={Introduction}/>
         <Route path='/slide1' Component={Slide1Agenda}></Route>
         <Route path='/slide2' Component={Slide2WhatIsRecession}></Route>
           <Route path='/slide3' Component={Slide3CausesOfRecession}></Route>
